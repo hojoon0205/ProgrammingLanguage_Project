@@ -10,7 +10,7 @@ $ make
 ## How to run
 
 ```
-$ ./main <your-input-file-name>
+$ ./compiler2018 <your-input-file-name>
 ```
 
 If you want more information, please mail to me: hojoon0205@gmail.com
