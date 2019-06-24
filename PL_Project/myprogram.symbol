@@ -1,0 +1,11 @@
+type:char
+name:test	type:function	scope:global
+name:alpha	type:variable	scope:global->test
+name:beta	type:variable	scope:global->test
+type:char
+name:a	type:variable	scope:global->test
+name:c	type:variable	scope:global->test
+type:int
+name:b	type:variable	scope:global->test
+type:int
+name:d	type:variable	scope:global->test->IF_THEN

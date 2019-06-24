@@ -1,0 +1,35 @@
+BEGIN test
+  LD	Reg#1, 5
+  ST	Reg#1, a
+  LD	Reg#1, 4
+  ST	Reg#1, b
+  LD	Reg#3, a
+  LD	Reg#2, b
+  LT	Reg#1, Reg#2, Reg#3
+  JUMPF	Reg#1	2
+  LD	Reg#1, 2
+  ST	Reg#1, d
+  LD	Reg#1, b
+  ST	Reg#1, a
+  JUMP		1
+LABEL:2
+  LD	Reg#1, a
+  ST	Reg#1, b
+LABEL:1
+  LD	Reg#3, a
+  LD	Reg#2, b
+  ADD	Reg#1, Reg#3, Reg#2
+  ST	Reg#1, c
+  LD	Reg#3, 1
+  LD	Reg#2, 2
+  MUL	Reg#1, Reg#3, Reg#2
+  LD	Reg#4, 4
+  LD	Reg#2, a
+  MUL	Reg#3, Reg#4, Reg#2
+  ADD	Reg#2, Reg#1, Reg#3
+  ST	Reg#2, c
+  LD	Reg#1, 0
+  RET	Reg#1
+END test
+
+# number of registers: 4

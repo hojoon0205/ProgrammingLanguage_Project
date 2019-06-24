@@ -1,0 +1,19 @@
+프로그래밍언어 Compiler Project
+
+구성원
+류호준 2016312332
+오용우 2016313958
+이민영 2016310944
+정수림 2016310494
+
+How to compile:
+
+$ make
+
+How to clean:
+
+$ make clean
+
+How to run(compile your code):
+
+$ ./compiler2018 <your_input_file_name>

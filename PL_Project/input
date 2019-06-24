@@ -1,0 +1,18 @@
+char test(alpha,beta){
+	char a, c;
+	int b;
+	a = 5;#This
+	b = 4;
+	IF a>b THEN
+	{#IS
+        int d;
+        d = 2;
+		a = b;
+	}
+    ELSE { b = a; }
+    c = a + b;
+    #Single Line
+    c = 1 * 2 + 4 * a;
+	RETURN 0;
+    #comment
+}
