@@ -184,5 +184,7 @@ int scanner(char *input)
 		index++;
 	}
 	code[index].type = 21;
+    printf("scanner finish\n");
+    fflush(stdout);
 	return 0;
 }
